@@ -6,7 +6,7 @@ a{color:var(--bs-gold)}
 ::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-thumb{background:var(--bs-line);border-radius:8px}::-webkit-scrollbar-track{background:transparent}
 
 /* ---- Rail latéral betterShowdown ---- */
-#bs-rail{position:fixed;left:calc(var(--bs-rail-w) * -1);top:0;bottom:0;width:var(--bs-rail-w);background:var(--bs-rail);border-right:1px solid var(--bs-panel2);display:flex;flex-direction:column;align-items:center;padding:16px 0;gap:6px;z-index:9999;font-family:Inter,"Segoe UI",system-ui,sans-serif}
+#bs-rail{position:fixed;left:0;top:0;bottom:0;width:var(--bs-rail-w);background:var(--bs-rail);border-right:1px solid var(--bs-panel2);display:flex;flex-direction:column;align-items:center;padding:16px 0;gap:6px;z-index:9999;font-family:Inter,"Segoe UI",system-ui,sans-serif}
 #bs-rail .bs-logo{width:56px;height:56px;border-radius:16px;background:linear-gradient(135deg,var(--bs-accent),#c4163a);display:flex;align-items:center;justify-content:center;margin-bottom:12px;box-shadow:0 6px 18px rgba(255,77,94,.35)}
 #bs-rail button.bs-nav{width:76px;height:62px;border:0 !important;border-radius:16px !important;background:transparent !important;color:var(--bs-muted) !important;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;font-size:11px;font-weight:600;box-shadow:none !important;text-shadow:none !important;padding:0}
 #bs-rail button.bs-nav:hover{background:var(--bs-panel) !important;color:#fff !important}
@@ -164,3 +164,20 @@ a.bs-row{text-decoration:none}a.bs-row:hover{outline:1px solid var(--bs-gold)}
 .bs-ev i{display:block;height:6px;border-radius:3px;background:var(--bs-bg);overflow:hidden}
 .bs-ev i b{display:block;height:6px;border-radius:3px;background:linear-gradient(90deg,var(--bs-accent),var(--bs-gold))}
 @media (max-width:1400px){.bs-mons{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ---- Correctifs : les règles génériques de boutons ne doivent pas écraser les vues betterShowdown ---- */
+#bs-view{overflow-x:hidden}
+#bs-view button.bs-cta{background:var(--bs-accent) !important;border:0 !important;border-radius:24px !important;color:#fff !important;box-shadow:0 8px 22px rgba(255,77,94,.45) !important}
+#bs-view button.bs-sec{background:transparent !important;border:2px solid rgba(255,255,255,.4) !important;border-radius:24px !important;color:#fff !important;box-shadow:none !important}
+#bs-view button.bs-sec:hover{border-color:#fff !important;background:rgba(255,255,255,.1) !important}
+#bs-view .bs-btn{border-radius:21px !important}
+#bs-view .bs-btn.pri{background:var(--bs-accent) !important;border-color:var(--bs-accent) !important;color:#fff !important}
+#bs-view button.bs-chip{border-radius:19px !important;background:var(--bs-panel) !important}
+#bs-view button.bs-chip.on{background:var(--bs-gold) !important;border-color:var(--bs-gold) !important;color:#14183a !important}
+#bs-view button.bs-team{background:var(--bs-panel) !important;border-radius:18px !important}
+#bs-view button.bs-team:hover{border-color:var(--bs-gold) !important}
+#bs-view button.bs-row{border:0 !important;border-radius:14px !important;background:var(--bs-panel2) !important}
+.bs-team .mons{flex-wrap:wrap}
+.bs-team .mons img{width:44px;height:44px}
+.bs-teams{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+#bs-rail .bs-ver{font-size:10px;color:var(--bs-muted);margin-top:4px}
