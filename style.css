@@ -127,3 +127,40 @@ a.bs-row{text-decoration:none}a.bs-row:hover{outline:1px solid var(--bs-gold)}
 .bs-lad tr.top td{background:var(--bs-panel2)}
 .bs-search{height:40px;border-radius:20px;border:1px solid var(--bs-line);background:var(--bs-panel);color:var(--bs-text);padding:0 16px;font:inherit;font-size:14px;min-width:220px}
 @media (max-width:1250px){.bs-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* ---- Combat : habillage unique ---- */
+.ps-room .battle{border-radius:20px !important;box-shadow:0 0 0 1px var(--bs-line),0 18px 50px rgba(0,0,0,.55) !important;overflow:hidden}
+.battle-controls{background:linear-gradient(180deg,var(--bs-panel),var(--bs-bg)) !important;border:1px solid var(--bs-line);border-radius:20px;padding:10px 6px 14px !important;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.battle-controls .whatdo{color:var(--bs-text) !important;font-size:11pt !important;font-weight:600;line-height:1.8 !important}
+.battle-controls .whatdo small{border-radius:8px !important;border-color:var(--bs-line) !important;color:var(--bs-muted) !important;background:var(--bs-panel2)}
+.moveselect,.switchselect,.shiftselect{font-family:"Exo 2",Inter,sans-serif;font-style:normal !important;font-size:13pt !important;color:var(--bs-gold) !important}
+.movemenu button.movebutton,.movebutton{border-radius:16px !important;border-width:2px !important;margin-top:8px !important;min-height:56px;font-weight:700 !important;text-shadow:0 1px 2px rgba(0,0,0,.35) !important;box-shadow:0 6px 14px rgba(0,0,0,.35) !important;transition:transform .12s,box-shadow .12s}
+.movebutton:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(0,0,0,.45) !important}
+.movebutton small{opacity:.9}
+.switchmenu button{border-radius:16px !important;margin-top:8px !important;background:var(--bs-panel2) !important;border:1px solid var(--bs-line) !important;color:var(--bs-text) !important;text-shadow:none !important;box-shadow:0 4px 10px rgba(0,0,0,.3) !important;transition:transform .12s}
+.switchmenu button:hover:not(:disabled){transform:translateY(-2px);border-color:var(--bs-gold) !important}
+.switchmenu button.disabled,.switchmenu button:disabled,.movebutton.disabled,.movebutton:disabled{background:var(--bs-panel) !important;border-color:var(--bs-line) !important;color:#6b749c !important;opacity:.6}
+.hpbar,.switchmenu .hpbar{border-radius:6px !important;background:var(--bs-bg) !important;border-color:var(--bs-line) !important}
+.hpbar-green span,.hpbar span{border-radius:5px}
+.overlay-controls-list,.overlay-controls .movecontrols,.overlay-controls .switchcontrols,.overlay-controls .targetcontrols,.overlay-controls .teamcontrols,.overlay-controls .whatdo{background:rgba(8,13,31,.82) !important;border:1px solid var(--bs-line);border-radius:16px !important}
+.battle-log .inner,.battle-log-add{font-size:10.5pt}
+.battle-log .battle-history{color:var(--bs-text) !important;border-left:3px solid var(--bs-line);padding-left:8px;margin-left:2px}
+.battle-log .turn,.battle-log h2.battle-roomtitle,.battle-log .turn-start{background:var(--bs-panel2) !important;color:var(--bs-gold) !important;border-radius:10px;border:0 !important;font-family:"Exo 2",Inter,sans-serif;padding:4px 10px}
+.battle-log .chat small{color:var(--bs-muted)}
+.battle-controls button.button[name=undoChoice],.battle-controls button[name=openTimer]{border-radius:12px !important}
+
+/* ---- Détail d'une équipe ---- */
+.bs-back{margin-bottom:16px}
+.bs-mons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.bs-mon{background:var(--bs-panel);border:1px solid var(--bs-line);border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:12px}
+.bs-mon .top{display:flex;gap:14px;align-items:center}
+.bs-mon .top img{width:96px;height:96px;object-fit:contain}
+.bs-mon .nm{font-family:"Exo 2",Inter,sans-serif;font-weight:800;font-size:20px;line-height:1.1}
+.bs-mon .sub{font-size:13px;color:var(--bs-muted);margin-top:4px;line-height:1.4}
+.bs-tera{display:inline-block;padding:3px 10px;border-radius:10px;font-size:12px;font-weight:700;margin-top:6px}
+.bs-moves{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.bs-mv{padding:8px 10px;border-radius:10px;font-size:13px;font-weight:700}
+.bs-ev{display:grid;grid-template-columns:34px 1fr 30px;gap:8px;align-items:center;font-size:12px;color:var(--bs-muted)}
+.bs-ev i{display:block;height:6px;border-radius:3px;background:var(--bs-bg);overflow:hidden}
+.bs-ev i b{display:block;height:6px;border-radius:3px;background:linear-gradient(90deg,var(--bs-accent),var(--bs-gold))}
+@media (max-width:1400px){.bs-mons{grid-template-columns:repeat(2,minmax(0,1fr))}}
