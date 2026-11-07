@@ -1,4 +1,4 @@
-# betterShowdown
+# betterShowdown!
 
 A modern dark theme and navigation rail for [Pokémon Showdown](https://play.pokemonshowdown.com/), the online Pokémon battle simulator.
 

@@ -1,6 +1,6 @@
 {
   "name": "bettershowdown",
-  "productName": "betterShowdown",
+  "productName": "betterShowdown!",
   "version": "0.1.0",
   "description": "Client PC moderne pour Pokémon Showdown",
   "main": "main.js",
@@ -14,7 +14,7 @@
   },
   "build": {
     "appId": "fr.bettershowdown.app",
-    "productName": "betterShowdown",
+    "productName": "betterShowdown!",
     "files": ["**/*"],
     "win": { "target": "nsis" },
     "mac": { "target": "dmg" },

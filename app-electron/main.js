@@ -8,7 +8,7 @@ const PS_HOSTS = /(^|\.)(pokemonshowdown\.com|psim\.us|smogon\.com)$/;
 function createWindow() {
   const win = new BrowserWindow({
     width: 1440, height: 900, minWidth: 1100, minHeight: 700,
-    backgroundColor: '#0c1229', title: 'betterShowdown', autoHideMenuBar: true,
+    backgroundColor: '#0c1229', title: 'betterShowdown!', autoHideMenuBar: true,
     webPreferences: { contextIsolation: true, nodeIntegration: false }
   });
   const script = fs.readFileSync(path.join(__dirname, 'betterShowdown.js'), 'utf8');

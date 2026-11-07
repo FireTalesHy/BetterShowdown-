@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         betterShowdown
+// @name         betterShowdown!
 // @namespace    bettershowdown
 // @version      0.2.0
 // @description  Interface moderne pour Pokémon Showdown (restylage du vrai site + rail de navigation)
