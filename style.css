@@ -1,0 +1,78 @@
+:root{--bs-accent:#ff4d5e;--bs-gold:#ffcb05;--bs-bg:#0c1229;--bs-rail:#080d1f;--bs-panel:#151d3d;--bs-panel2:#1d2750;--bs-line:#2a3566;--bs-text:#eef1ff;--bs-muted:#a3acd6;--bs-rail-w:96px}
+html{left:var(--bs-rail-w) !important;width:calc(100% - var(--bs-rail-w)) !important}
+html,body{background:var(--bs-bg) !important;color:var(--bs-text) !important}
+body{background-image:none !important;font-family:Inter,"Segoe UI",system-ui,sans-serif !important}
+a{color:var(--bs-gold)}
+::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-thumb{background:var(--bs-line);border-radius:8px}::-webkit-scrollbar-track{background:transparent}
+
+/* ---- Rail latéral betterShowdown ---- */
+#bs-rail{position:fixed;left:calc(var(--bs-rail-w) * -1);top:0;bottom:0;width:var(--bs-rail-w);background:var(--bs-rail);border-right:1px solid var(--bs-panel2);display:flex;flex-direction:column;align-items:center;padding:16px 0;gap:6px;z-index:9999;font-family:Inter,"Segoe UI",system-ui,sans-serif}
+#bs-rail .bs-logo{width:56px;height:56px;border-radius:16px;background:linear-gradient(135deg,var(--bs-accent),#c4163a);display:flex;align-items:center;justify-content:center;margin-bottom:12px;box-shadow:0 6px 18px rgba(255,77,94,.35)}
+#bs-rail button.bs-nav{width:76px;height:62px;border:0 !important;border-radius:16px !important;background:transparent !important;color:var(--bs-muted) !important;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;font-size:11px;font-weight:600;box-shadow:none !important;text-shadow:none !important;padding:0}
+#bs-rail button.bs-nav:hover{background:var(--bs-panel) !important;color:#fff !important}
+#bs-rail button.bs-nav.on{background:var(--bs-panel2) !important;color:#fff !important;box-shadow:inset 3px 0 0 var(--bs-accent) !important}
+#bs-rail svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#bs-rail .bs-sp{flex:1}
+
+/* ---- Barre du haut / onglets ---- */
+.header,.dark .header,.header-vertical,.dark .header-vertical{background:var(--bs-rail) !important;border-bottom:1px solid var(--bs-panel2)}
+.mini-header,.maintabbarbottom,.tabbar:after,.dark .mini-header,.dark .maintabbarbottom,.dark .tabbar:after{background:var(--bs-rail) !important;border-color:var(--bs-panel2) !important}
+.tabbar .button,.tablist .button,.dark .tabbar .button,.dark .header-vertical .tablist .button{background:var(--bs-panel) !important;border:1px solid var(--bs-line) !important;color:var(--bs-text) !important;border-radius:12px !important;box-shadow:none !important;text-shadow:none !important}
+.tabbar .button:hover,.tablist .button:hover{border-color:var(--bs-gold) !important;background:var(--bs-panel2) !important}
+.tabbar .button.cur,.tabbar .button.cur:hover,.tablist .button.cur,.dark .tabbar .button.cur{background:var(--bs-panel2) !important;border-color:var(--bs-gold) !important;color:#fff !important}
+.tabbar .button.notifying,.tablist .button.notifying{background:var(--bs-accent) !important;border-color:var(--bs-accent) !important;color:#fff !important}
+.userbar .username,.dark .userbar .username{color:var(--bs-text) !important}
+
+/* ---- Salles, fenêtres, popups ---- */
+.ps-room,.dark .ps-room{border-color:var(--bs-line) !important}
+.ps-room.ps-room-light,.ps-room-light,.ps-room.ps-room-opaque,.ps-room-opaque{background:var(--bs-bg) !important;color:var(--bs-text) !important}
+.ps-overlay,.dark .ps-overlay{background:rgba(5,8,20,.6) !important}
+.ps-popup,.dark .ps-popup{background:var(--bs-panel) !important;color:var(--bs-text) !important;border:1px solid var(--bs-line) !important;border-radius:16px !important;box-shadow:0 18px 50px rgba(0,0,0,.55) !important}
+.ps-popup h3,.ps-popup p{color:var(--bs-text) !important}
+.mini-window-contents,.pm-window,.dark .pm-window{background:var(--bs-panel) !important;border:1px solid var(--bs-line) !important;border-radius:16px !important;color:var(--bs-text) !important}
+.mini-window-header,.pm-log{background:var(--bs-panel2) !important;color:var(--bs-text) !important}
+.mainmenu-footer,.mainmenu-footer small{color:var(--bs-muted) !important;text-shadow:none !important}
+.infobox,.infobox-limited,.roomlist,.dark .roomlist{background:var(--bs-panel) !important;border:1px solid var(--bs-line) !important;border-radius:14px !important;color:var(--bs-text) !important}
+
+/* ---- Boutons (hors attaques / Pokémon, qui gardent leurs couleurs de type) ---- */
+.button:not(.mainmenu1):not(.mainmenu2):not(.mainmenu3):not(.mainmenu4):not(.mainmenu5):not(.mainmenu6):not(.tabbar *):not(.tablist *),
+button:not(.bs-nav):not(.picon):not([class*="type-"]):not(.tabbar *):not(.movemenu *):not(.switchmenu *):not(.userlist *){
+  border-radius:12px !important;border:1px solid var(--bs-line) !important;background:var(--bs-panel2) !important;color:var(--bs-text) !important;text-shadow:none !important;box-shadow:none !important}
+.button:not(.mainmenu1):not(.tabbar *):hover,button:not(.bs-nav):not(.tabbar *):not(.movemenu *):not(.switchmenu *):not(.userlist *):hover{border-color:var(--bs-gold) !important;background:#26336a !important}
+.button.mainmenu1,.button.mainmenu1:hover{background:linear-gradient(135deg,var(--bs-accent),#c4163a) !important;border:0 !important;color:#fff !important;border-radius:16px !important;box-shadow:0 8px 22px rgba(255,77,94,.35) !important;text-shadow:none !important}
+.button.mainmenu2,.button.mainmenu3,.button.mainmenu4,.button.mainmenu5,.button.mainmenu6{background:var(--bs-panel) !important;border:1px solid var(--bs-line) !important;color:var(--bs-text) !important;border-radius:16px !important;box-shadow:none !important;text-shadow:none !important}
+.button.mainmenu2:hover,.button.mainmenu3:hover,.button.mainmenu4:hover,.button.mainmenu5:hover,.button.mainmenu6:hover{border-color:var(--bs-gold) !important;background:var(--bs-panel2) !important}
+.button:disabled,button:disabled,.button.disabled{opacity:.45 !important}
+
+/* ---- Champs ---- */
+input[type=text],input[type=password],input[type=search],input:not([type]),textarea,select,.textbox{background:var(--bs-bg) !important;color:var(--bs-text) !important;border:1px solid var(--bs-line) !important;border-radius:10px !important;box-shadow:none !important}
+input:focus,textarea:focus,select:focus,.textbox:focus{outline:2px solid var(--bs-gold) !important;outline-offset:1px}
+
+/* ---- Chat & journal de combat ---- */
+.chat-log,.readable-bg,.battle-log,.dark .chat-log,.dark .readable-bg,.dark .battle-log{background:var(--bs-panel) !important;color:var(--bs-text) !important;backdrop-filter:none !important}
+.battle-log-add,.chat-log-add{background:var(--bs-panel) !important;border-color:var(--bs-line) !important}
+.chat .username,.chat strong{color:var(--bs-gold)}
+.chat.highlighted{background:rgba(255,203,5,.12) !important}
+.userlist,.dark .userlist{background:var(--bs-panel) !important;border-color:var(--bs-line) !important}
+.userlist li button{color:var(--bs-text) !important;background:transparent !important;border:0 !important}
+.userlist li button:hover{background:var(--bs-panel2) !important}
+
+/* ---- Combat : commandes ---- */
+.battle-controls,.battle-controls .whatdo{color:var(--bs-text) !important}
+.battle-controls p{color:var(--bs-text) !important}
+.movemenu button,.switchmenu button,.battle-controls button.movebutton,.battle-controls .switchmenu button{border-radius:14px !important}
+.movemenu button{font-weight:600 !important}
+.battle-controls .whatdo{font-weight:600}
+
+/* ---- Teambuilder ---- */
+.teamchartbox,.setchart,.teambuilder-results,.teamlist li,.team,.setmenu,.teambuilder-pokemon-import,.utilichart li.result{background:var(--bs-panel) !important;border-color:var(--bs-line) !important;color:var(--bs-text) !important}
+.utilichart li.result a,.utilichart li.result{color:var(--bs-text) !important}
+.utilichart li.result:hover,.utilichart li.result a:hover{background:var(--bs-panel2) !important}
+.teamlist li.team-folder-selected,.team-selected{background:var(--bs-panel2) !important}
+.teambuilder h2,.teambuilder h3,.teambuilder label{color:var(--bs-text) !important}
+
+/* ---- Classement & tableaux ---- */
+.ladder table,.ladder th,.ladder td,table.ladder{background:transparent !important;color:var(--bs-text) !important;border-color:var(--bs-line) !important}
+.ladder tr:nth-child(odd) td{background:rgba(255,255,255,.035) !important}
+.ladder th{color:var(--bs-muted) !important;text-transform:uppercase;font-size:10pt;letter-spacing:.06em}
+.ladder a{color:var(--bs-gold) !important}

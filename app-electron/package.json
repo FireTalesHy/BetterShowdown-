@@ -1,0 +1,23 @@
+{
+  "name": "bettershowdown",
+  "productName": "betterShowdown",
+  "version": "0.1.0",
+  "description": "Client PC moderne pour Pokémon Showdown",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "fr.bettershowdown.app",
+    "productName": "betterShowdown",
+    "files": ["**/*"],
+    "win": { "target": "nsis" },
+    "mac": { "target": "dmg" },
+    "linux": { "target": "AppImage" }
+  }
+}
