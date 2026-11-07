@@ -21,6 +21,7 @@ betterShowdown restyles the **real** Showdown client in place. It does not copy 
 - Custom Home, Teams, Team detail and Ladder screens with their own layout (hero banner, team cards with sprites, ladder table with filters), fed by the real client data: your account, your saved teams, running battles and the official ladder.
 - Redesigned battle screen: framed arena, card-style controls, larger move buttons (type colors kept), restyled switch menu and battle log. Dark, Pokémon-inspired theme for tabs, chat rooms and the official Teambuilder. Move buttons keep their type colors.
 - Collapsible chat rooms menu (joined rooms with unread dots, popular rooms, link to the full list) and a "big battle" mode: single-panel layout so the battle arena scales up to the full window width (toggle in the menu, on by default).
+- Enlarged battle arena: the official client caps the arena at 640x360, betterShowdown zooms it automatically to fit the window (toggle in the rooms menu).
 - Left navigation rail wired to the Showdown client: Home, Battles, Teams (Teambuilder), Ladder, Rooms and Options. Pokédex and Replays open their official sites in a new tab.
 - Three ways to run it, all using the same script.
 
