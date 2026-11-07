@@ -6,6 +6,16 @@ betterShowdown restyles the **real** Showdown client in place. It does not copy 
 
 > Unofficial fan project. Not affiliated with or endorsed by Pokémon Showdown, Smogon, Nintendo, Game Freak or The Pokémon Company.
 
+## Download
+
+[![Install userscript](https://img.shields.io/badge/Install-userscript_(1_click)-ff4d5e?style=for-the-badge)](https://raw.githubusercontent.com/FireTalesHy/BetterShowdown-/main/betterShowdown.user.js)
+[![Download extension](https://img.shields.io/badge/Download-browser_extension-4a90ff?style=for-the-badge)](https://github.com/FireTalesHy/BetterShowdown-/raw/main/downloads/betterShowdown-extension.zip)
+[![Download desktop app](https://img.shields.io/badge/Download-desktop_app-2fc58b?style=for-the-badge)](https://github.com/FireTalesHy/BetterShowdown-/releases/latest)
+
+- **Userscript**: with [Tampermonkey](https://www.tampermonkey.net/) or Violentmonkey installed, the first button opens the install prompt directly.
+- **Extension**: downloads a zip. Unzip it, then load the folder as an unpacked extension (see below).
+- **Desktop app**: installers (Windows, macOS, Linux) appear under Releases once a version has been built. Until then, use [the source zip](https://github.com/FireTalesHy/BetterShowdown-/raw/main/downloads/betterShowdown-app-source.zip) and run `npm install && npm start`.
+
 ## Features
 
 - Dark, Pokémon-inspired theme for the main menu, tabs, chat rooms, battle log, battle controls, Teambuilder and ladder tables. Move buttons keep their type colors.

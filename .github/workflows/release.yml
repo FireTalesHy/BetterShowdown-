@@ -1,0 +1,40 @@
+name: Build desktop app
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [windows-latest, macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: app-electron
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      - run: npx electron-builder --publish never
+      - uses: actions/upload-artifact@v4
+        with:
+          name: betterShowdown-${{ matrix.os }}
+          path: |
+            app-electron/dist/*.exe
+            app-electron/dist/*.dmg
+            app-electron/dist/*.AppImage
+      - if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            app-electron/dist/*.exe
+            app-electron/dist/*.dmg
+            app-electron/dist/*.AppImage

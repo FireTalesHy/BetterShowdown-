@@ -15,9 +15,19 @@
   "build": {
     "appId": "fr.bettershowdown.app",
     "productName": "betterShowdown!",
-    "files": ["**/*"],
-    "win": { "target": "nsis" },
-    "mac": { "target": "dmg" },
-    "linux": { "target": "AppImage" }
-  }
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "author": "FireTalesHy",
+  "homepage": "https://github.com/FireTalesHy/BetterShowdown-"
 }
