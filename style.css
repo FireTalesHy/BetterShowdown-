@@ -181,3 +181,11 @@ a.bs-row{text-decoration:none}a.bs-row:hover{outline:1px solid var(--bs-gold)}
 .bs-team .mons img{width:44px;height:44px}
 .bs-teams{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
 #bs-rail .bs-ver{font-size:10px;color:var(--bs-muted);margin-top:4px}
+
+/* ---- Combat : correctifs de spécificité (le CSS du site est chargé après le nôtre) ---- */
+.battle-controls .switchmenu button{background:var(--bs-panel2) !important;border:1px solid var(--bs-line) !important;color:var(--bs-text) !important;border-radius:14px !important;text-shadow:none !important;box-shadow:0 4px 10px rgba(0,0,0,.3) !important}
+.battle-controls .switchmenu button.disabled,.battle-controls .switchmenu button:disabled{background:var(--bs-panel) !important;border-color:var(--bs-line) !important;color:#8a93bd !important;opacity:.85;box-shadow:none !important}
+.battle-controls .movemenu button,.battle-controls .movebutton{filter:saturate(1.45) contrast(1.05);border-radius:16px !important;border-width:2px !important;box-shadow:0 6px 14px rgba(0,0,0,.4) !important;color:#10142e !important}
+.battle-controls .movemenu button:hover,.battle-controls .movebutton:hover{filter:saturate(1.6) brightness(1.08)}
+.battle-controls .whatdo,.battle-controls p{color:var(--bs-text) !important}
+.battle-controls button.button,.battle-controls button[name=cancel]{border-radius:12px !important;background:var(--bs-panel2) !important;color:var(--bs-text) !important;border:1px solid var(--bs-line) !important}
