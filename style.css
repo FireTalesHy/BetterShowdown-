@@ -214,3 +214,28 @@ a.bs-row{text-decoration:none}a.bs-row:hover{outline:1px solid var(--bs-gold)}
 /* ---- Arène agrandie (le site plafonne l'arène à 640x360) ---- */
 body.bs-bigbattle .ps-room .scrollable-battle-container{zoom:var(--bs-bz) !important}
 body.bs-bigbattle .ps-room .battle-log{left:calc(640px * var(--bs-bz)) !important}
+
+/* ---- Pokédex ---- */
+.bs-dexgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+#bs-view button.bs-dexcard{background:var(--bs-panel) !important;border:1px solid var(--bs-line) !important;border-radius:18px !important;padding:14px !important;display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--bs-text) !important;text-align:center;min-width:0}
+#bs-view button.bs-dexcard:hover{border-color:var(--bs-gold) !important}
+.bs-dexcard img{width:96px;height:96px;object-fit:contain}
+.bs-dexcard .no{font-size:12px;color:var(--bs-muted)}
+.bs-dexcard .nm{font-family:"Exo 2",Inter,sans-serif;font-weight:800;font-size:16px;line-height:1.15}
+.bs-dexcard .tys{display:flex;gap:4px;flex-wrap:wrap;justify-content:center}
+.bs-ty{display:inline-block;padding:3px 10px;border-radius:10px;font-size:12px;font-weight:700}
+.bs-dexdet{display:grid;grid-template-columns:340px minmax(0,1fr);gap:24px}
+.bs-dexdet .hero{background:linear-gradient(160deg,var(--bs-panel2),var(--bs-panel));border:1px solid var(--bs-line);border-radius:24px;padding:26px;text-align:center}
+.bs-dexdet .hero img{width:200px;height:200px;object-fit:contain;filter:drop-shadow(0 12px 8px rgba(0,0,0,.35))}
+.bs-dexdet .hero h2{font-size:30px;font-weight:800;margin:6px 0 10px}
+.bs-dexdet .hero .no{color:var(--bs-muted);font-size:14px}
+.bs-dexdet .facts{margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:8px;text-align:left;font-size:13px;color:var(--bs-muted)}
+.bs-dexdet .facts b{display:block;color:var(--bs-text);font-size:15px}
+.bs-bst{display:grid;grid-template-columns:54px 40px 1fr;gap:10px;align-items:center;font-size:13px;margin-bottom:8px;color:var(--bs-muted)}
+.bs-bst b{color:var(--bs-text);text-align:right}
+.bs-bst i{display:block;height:10px;border-radius:5px;background:var(--bs-bg);overflow:hidden}
+.bs-bst i u{display:block;height:10px;border-radius:5px;text-decoration:none}
+.bs-wk{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:10px;font-size:13px;color:var(--bs-muted)}
+.bs-wk>span:first-child{min-width:64px;font-weight:700;color:var(--bs-text)}
+.bs-wk .bs-ty{font-size:11px}
+@media (max-width:1100px){.bs-dexdet{grid-template-columns:1fr}}
