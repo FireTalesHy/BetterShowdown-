@@ -18,8 +18,8 @@ betterShowdown restyles the **real** Showdown client in place. It does not copy 
 
 ## Features
 
-- Home page banner (hero) wired to the real Battle! button, format picker and Teambuilder.
-- Dark, Pokémon-inspired theme for the main menu, tabs, chat rooms, battle log, battle controls, Teambuilder and ladder tables. Move buttons keep their type colors.
+- Custom Home, Teams and Ladder screens with their own layout (hero banner, team cards with sprites, ladder table with filters), fed by the real client data: your account, your saved teams, running battles and the official ladder.
+- Dark, Pokémon-inspired theme for tabs, chat rooms, battle log, battle controls and the official Teambuilder. Move buttons keep their type colors.
 - Left navigation rail wired to the Showdown client: Home, Battles, Teams (Teambuilder), Ladder, Rooms and Options. Pokédex and Replays open their official sites in a new tab.
 - Three ways to run it, all using the same script.
 
