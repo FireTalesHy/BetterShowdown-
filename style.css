@@ -189,3 +189,24 @@ a.bs-row{text-decoration:none}a.bs-row:hover{outline:1px solid var(--bs-gold)}
 .battle-controls .movemenu button:hover,.battle-controls .movebutton:hover{filter:saturate(1.6) brightness(1.08)}
 .battle-controls .whatdo,.battle-controls p{color:var(--bs-text) !important}
 .battle-controls button.button,.battle-controls button[name=cancel]{border-radius:12px !important;background:var(--bs-panel2) !important;color:var(--bs-text) !important;border:1px solid var(--bs-line) !important}
+
+/* ---- Menu dépliant des salons ---- */
+#bs-fly{position:fixed;left:var(--bs-rail-w);top:56px;bottom:0;width:300px;background:var(--bs-rail);border-right:1px solid var(--bs-line);z-index:16;overflow:auto;padding:18px 16px 24px;box-sizing:border-box;transform:translateX(-110%);transition:transform .18s ease;font-family:Inter,"Segoe UI",system-ui,sans-serif;color:var(--bs-text);box-shadow:12px 0 30px rgba(0,0,0,.35)}
+#bs-fly.on{transform:none}
+#bs-fly h3{margin:0 0 14px;font-family:"Exo 2",Inter,sans-serif;font-size:20px;color:var(--bs-text)}
+#bs-fly details{margin-bottom:12px;background:var(--bs-panel);border:1px solid var(--bs-line);border-radius:16px;overflow:hidden}
+#bs-fly summary{cursor:pointer;list-style:none;padding:12px 16px;font-weight:600;font-size:14px;display:flex;justify-content:space-between;align-items:center}
+#bs-fly summary::-webkit-details-marker{display:none}
+#bs-fly summary:after{content:"";width:8px;height:8px;border-right:2px solid var(--bs-muted);border-bottom:2px solid var(--bs-muted);transform:rotate(45deg);transition:transform .15s;margin-top:-3px}
+#bs-fly details[open] summary:after{transform:rotate(-135deg);margin-top:3px}
+#bs-fly .bs-list{padding:0 8px 10px}
+#bs-fly button.bs-room{width:100%;display:flex;align-items:center;justify-content:space-between;gap:8px;height:40px;padding:0 12px;margin-top:4px;border:0 !important;border-radius:12px !important;background:transparent !important;color:var(--bs-text) !important;font:inherit;font-size:14px;text-align:left;cursor:pointer;box-shadow:none !important}
+#bs-fly button.bs-room:hover{background:var(--bs-panel2) !important}
+#bs-fly button.bs-room.cur{background:var(--bs-panel2) !important;box-shadow:inset 3px 0 0 var(--bs-accent) !important}
+#bs-fly .bs-dot{min-width:8px;height:8px;border-radius:4px;background:var(--bs-accent)}
+#bs-fly .bs-note{padding:4px 12px 8px;font-size:13px;line-height:1.45;color:var(--bs-muted)}
+#bs-fly .bs-opt{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 12px 12px;font-size:14px}
+#bs-fly .bs-sw{width:48px;height:28px;border-radius:14px;border:0 !important;background:var(--bs-line) !important;position:relative;cursor:pointer;padding:0;flex:none;box-shadow:none !important}
+#bs-fly .bs-sw:after{content:"";position:absolute;top:4px;left:4px;width:20px;height:20px;border-radius:50%;background:#fff;transition:left .15s}
+#bs-fly .bs-sw.on{background:var(--bs-accent) !important}
+#bs-fly .bs-sw.on:after{left:24px}
